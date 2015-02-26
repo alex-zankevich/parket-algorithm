@@ -4,9 +4,9 @@
 
 using namespace std;
 
-unsigned int f_7 = 5, f_1 = 1;
+int f_7 = 5, f_1 = 1;
 
-unsigned int func(unsigned int n)
+int func(int n)
 {
 	if (n % 2 != 0)
 		return 0;
@@ -24,8 +24,8 @@ unsigned int func(unsigned int n)
 
 int main()
 {
-	ifstream fin("tst.in");
-	ofstream fout("tst.out");
+	ifstream fin("in.txt");
+	ofstream fout("out.txt");
 	unsigned int n = 0;
 	fin >> n;
 	fout << func(n) << endl;
